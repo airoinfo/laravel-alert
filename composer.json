@@ -1,0 +1,26 @@
+{
+    "name": "airo/alert",
+    "description": "A simple PHP package to show alerts with the Laravel Framework and Vue",
+    "keywords": ["laravel", "alert", "notifier"],
+    "authors": [
+        {
+            "name": "happyxd",
+            "email": "lean@airo.com.tw"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Airo\\Alert\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Airo\\Alert\\AlertServiceProvider"
+            ],
+            "aliases": {
+                "Alert": "Airo\\Alert\\Alert"
+            }
+        }
+    }
+}

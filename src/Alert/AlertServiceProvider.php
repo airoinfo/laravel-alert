@@ -19,7 +19,12 @@ class AlertServiceProvider extends ServiceProvider
         $this->publishes([
             __DIR__.'/../views' => base_path('resources/views/vendor/notify'),
         ], 'views');
+
+        $this->publishes([
+            __DIR__.'/../components' => base_path('resources/js/components/'),
+        ], 'components');
     }
+    
     /**
      * Register the service provider.
      *

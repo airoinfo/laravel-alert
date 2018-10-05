@@ -1,5 +1,5 @@
 {
-    "name": "airo/alert",
+    "name": "airoinfo/laravel-alert",
     "description": "A simple PHP package to show alerts with the Laravel Framework and Vue",
     "keywords": ["laravel", "alert", "notifier"],
     "authors": [

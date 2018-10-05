@@ -11,7 +11,10 @@
     "autoload": {
         "psr-4": {
             "Airo\\Alert\\": "src/"
-        }
+        },
+        "files": [
+            "src/Alert/functions.php"
+        ]
     },
     "extra": {
         "laravel": {

@@ -14,10 +14,10 @@ class AlertServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        $this->loadViewsFrom(__DIR__.'/../views', 'alert');
+        $this->loadViewsFrom(__DIR__ . '/../views', 'alert');
 
         $this->publishes([
-            __DIR__.'/../views' => base_path('resources/views/vendor/notify'),
+            __DIR__ . '/../views' => base_path('resources/views/vendor/notify'),
         ], 'views');
 
         $componentPath = str_contains(app()->version(), '5.7') ? 
@@ -25,10 +25,10 @@ class AlertServiceProvider extends ServiceProvider
             base_path('resources/assets/js/components');
 
         $this->publishes([
-            __DIR__.'/../components' => $componentPath ,
+            __DIR__.'/../components' => $componentPath
         ], 'components');
     }
-    
+
     /**
      * Register the service provider.
      *

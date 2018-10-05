@@ -35,12 +35,12 @@ You can use it by default, or also create your own to catch the message
 
 Publish View Blade to resource\vendor\notify
 ```sh
-$ php artisan vendor:publish --tag=views
+$ php artisan vendor:publish --tag=views --force
 ```
 
 Publish Vue component to resource\js\components
 ```sh
-$ php artisan vendor:publish —-tag=components
+$ php artisan vendor:publish —-tag=components --force
 ```
 
 ### 2. Register your Vue component

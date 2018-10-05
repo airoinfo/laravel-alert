@@ -20,8 +20,12 @@ class AlertServiceProvider extends ServiceProvider
             __DIR__.'/../views' => base_path('resources/views/vendor/notify'),
         ], 'views');
 
+        $componentPath = str_contains(app()->version(), '5.7') ? 
+            base_path('resources/js/components/') : 
+            base_path('resources/assets/js/components');
+
         $this->publishes([
-            __DIR__.'/../components' => base_path('resources/js/components/'),
+            __DIR__.'/../components' => $componentPath ,
         ], 'components');
     }
     

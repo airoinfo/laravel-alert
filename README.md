@@ -18,13 +18,13 @@ config/app.php
 ```php
 'provider' => [
 	// package ServiceProvider
-	Airoinfo/laravel-alert/AlertServiceProvider::class,
+	Airo/Alert/AlertServiceProvider::class,
 ]
 ```
 
 ```php
 'alias' => [
-	'Alert' => 'Alert' => Airoinfo\laravel-alert\Alert::class,
+	'Alert' => 'Alert' => Airo\Alert\Alert::class,
 ]
 ```
 

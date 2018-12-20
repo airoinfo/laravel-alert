@@ -8,7 +8,7 @@ Easy to create awesome notify view and Laravel Facade to call on backend
 
 Use composer to install package
 ```shell
-$ composer required airoinfo/laravel-alert
+$ composer require airoinfo/laravel-alert
 ```
 
 *notice* if your Laravel version is beyond 5.6, package’ll auto register ServiceProvider to app.php.

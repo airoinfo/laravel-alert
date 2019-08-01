@@ -18,13 +18,13 @@ config/app.php
 ```php
 'provider' => [
 	// package ServiceProvider
-	Airo/Alert/AlertServiceProvider::class,
+	Airo\Alert\AlertServiceProvider::class,
 ]
 ```
 
 ```php
 'alias' => [
-	'Alert' => 'Alert' => Airo\Alert\Alert::class,
+	'Alert' => Airo\Alert\Alert::class,
 ]
 ```
 
@@ -59,7 +59,7 @@ views\layouts\app.blade.php
 
 ### 4. Use it in Controller
 ```php
-use Airo/Alert;
+use Airo\Alert\Alert;
 class HomeController
 {
 	public function login()

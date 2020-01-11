@@ -4,8 +4,8 @@
     "keywords": ["laravel", "alert", "notifier"],
     "authors": [
         {
-            "name": "happyxd",
-            "email": "lean@airo.com.tw"
+            "name": "user",
+            "email": "user@example2.com.tw"
         }
     ],
     "autoload": {

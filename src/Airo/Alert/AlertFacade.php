@@ -4,7 +4,7 @@ namespace Airo\Alert;
 
 use Illuminate\Support\Facades\Facade;
 
-class Alert extends Facade 
+class AlertFacade extends Facade
 {
     /**
      * Get the registered name of the component.

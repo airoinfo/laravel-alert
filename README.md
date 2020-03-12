@@ -24,7 +24,7 @@ config/app.php
 
 ```php
 'alias' => [
-	'Alert' => Airo\Alert\Alert::class,
+	'Alert' => Airo\Alert\AlertFacade::class,
 ]
 ```
 
@@ -59,7 +59,7 @@ views\layouts\app.blade.php
 
 ### 4. Use it in Controller
 ```php
-use Airo\Alert\Alert;
+use Airo\Alert\AlertFacade;
 class HomeController
 {
 	public function login()

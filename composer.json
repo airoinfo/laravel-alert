@@ -8,17 +8,21 @@
             "email": "user@example2.com.tw"
         }
     ],
+    "license": "MIT",
     "require": {
         "php": "^5.6|^7.0",
         "illuminate/support": "^5.5|^6.0|^7.0"
     },
     "autoload": {
         "psr-4": {
-            "Airo\\Alert\\": "src/"
+            "Airo\\": "src/"
         },
         "files": [
             "src/Alert/functions.php"
         ]
+    },
+    "config": {
+        "sort-packages": true
     },
     "extra": {
         "laravel": {
@@ -26,8 +30,10 @@
                 "Airo\\Alert\\AlertServiceProvider"
             ],
             "aliases": {
-                "Alert": "Airo\\Alert\\Alert"
+                "Alert": "Airo\\Alert\\AlertFacade"
             }
         }
-    }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
 }
